@@ -5,8 +5,7 @@
 
 <a href="https://github.com/Q-Future/"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvqassessment%2FQ-Bench-Video&count_bg=%23E97EBA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false"/></a>
     <a href="https://github.com/Q-Future/Q-Bench-Video"><img src="https://img.shields.io/github/stars/Q-Future/Q-Bench-Video"/></a>
-    <a href="https://arxiv.org/pdf/2406.03070"><img src="https://img.shields.io/badge/Arxiv-2406.03070-blue"/></a>
-    <a href="https://huggingface.co/datasets/q-future/Q-Bench-Video"><img src="https://img.shields.io/badge/Data-Release-green"></a>
+    <a href="https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video"><img src="https://img.shields.io/badge/Data-Release-green"></a>
    </div>
 
   
@@ -80,7 +79,7 @@ For *open-source* models, **mPLUG-Owl3** takes the first place. For *closed-sour
 
 <div align="center">
 <div style="width: 100%; text-align: center; margin:auto;">
-  <img style="width:80%" src="performance_glance.png">
+  <img style="width:100%" src="performance_glance.png">
 </div>
     
 **A Quick Look of the Q-Bench-Video Outcomes.**
@@ -120,25 +119,6 @@ Several conclusions can be obtained:
 2) **Open-ended questions are more challenging for LMMs.**
 
 3) **MMs exhibit unbalanced performance across different types of distortions.**
-
-
-
-
-
-
-<div style="width: 100%; text-align: center; margin:auto;">
-  <img style="width:60%" src="qualiative_MCQ.png">
-</div>
-
-**Qualitative Comparison for MCQ Questions**
-
-
-
-<div style="width: 100%; text-align: center; margin:auto;">
-  <img style="width:60%" src="qualiative_description.png">
-</div>
-
-**Qualitative Comparison for Open-ended Questions**
 
 ## Evaluate your model on Q-Bench-Video
 
