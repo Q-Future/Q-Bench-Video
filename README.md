@@ -38,7 +38,7 @@ _How LMMs Perform on Video Quality Understanding?_
    </div>
   <a href="https://github.com/Q-Future/Q-Bench-Video/blob/main/A_Bench__Are_LMMs_Masters_at_Evaluating_AI_generated_Images_.pdf"><strong>Paper</strong></a> |
 <a href="https://github.com/Q-Future/Q-Bench-Video"><strong>Github</strong></a> |
- <a href="https://huggingface.co/datasets/q-future/Q-Bench-Video"><strong>Data</strong></a> 
+ <a href="https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video"><strong>Data</strong></a> 
   <div style="width: 100%; text-align: center; margin:auto;">
       <img style="width:100%" src="dataset_statistics.png">
   </div>
@@ -56,8 +56,8 @@ C. Beyond the traditional *Technical*, *Aesthetic*, and *Temporal* distortions, 
 Finally, we collect a total of 2,378 question-answer pairs and test them on 12 open-source \& 5 proprietary LMMs. Our findings indicate that **while LMMs have a foundational understanding of video quality, their performance remains incomplete and imprecise, with a notable discrepancy compared to human-level performance**.
 
 ## Release
-- [To Do] 🔥 Release the technical report and data for **Q-Bench-Video**. Coming soon.
-- [2024/9/20] 🔥 [Github repo](https://github.com/Q-Future/Q-Bench-Video) for **Q-Bench-Video** is online. Do you want to find out how your LMM performs on video quality understanding? Come and test on **Q-Bench-Video** !!
+- [To Do] 🔥 Release the technical report for **Q-Bench-Video**. Coming soon.
+- [2024/9/20] 🔥 [Github repo](https://github.com/Q-Future/Q-Bench-Video) for **Q-Bench-Video** is online. Do you want to find out how your LMM performs on video quality understanding? Come and test on **Q-Bench-Video** !! [Dataset Download](https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video)
 
   
 ## Q-Bench-Video Construction
