@@ -125,17 +125,11 @@ Several conclusions can be obtained:
 Details are coming soon!
 
 
-### Legacy
-
-Details are coming soon!
-
-
 ## Contact
 
 Please contact any of the first authors of this paper for queries.
 
 - Zicheng Zhang, `zzc1998@sjtu.edu.cn`, @zzc-1998
 
-## Citation
 
 
