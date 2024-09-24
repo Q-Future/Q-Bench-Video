@@ -57,6 +57,7 @@ Finally, we collect a total of 2,378 question-answer pairs and test them on 12 o
 
 ## Release
 - [To Do] 🔥 Release the technical report for **Q-Bench-Video**. Coming soon.
+- [2024/9/24] 🔥 Release the sample script for testing on **Q-Bench-Video**.
 - [2024/9/20] 🔥 [Github repo](https://github.com/Q-Future/Q-Bench-Video) for **Q-Bench-Video** is online. Do you want to find out how your LMM performs on video quality understanding? Come and test on **Q-Bench-Video** !! [Dataset Download](https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video)
 
   
@@ -122,8 +123,15 @@ Several conclusions can be obtained:
 
 ## Evaluate your model on Q-Bench-Video
 
-Details are coming soon!
+Assume that you have downloaded the [Q-Bench-Video](https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video).
 
+We provide a sample [GPT_test.py](https://github.com/Q-Future/Q-Bench-Video/blob/main/GPT_test.py) of testing GPT API format on **Q-Bench-Video**
+
+Use the following command or make necessary modifications to quickly test GPT and your LMM models. 
+
+```
+python GPT_test.py --json_file path/to/Q_Bench_Video_dev.json --video_dir path/to/video/directory --output_file path/to/Q_Bench_Video_dev_response.json --api_key your_openai_api_key
+```
 
 ## Contact
 
