@@ -123,6 +123,8 @@ Several conclusions can be obtained:
 
 ## Evaluate your model on Q-Bench-Video
 
+1. Test on Q-Bench-Video
+
 Assume that you have downloaded the [Q-Bench-Video](https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video).
 
 We provide a sample [GPT_test.py](https://github.com/Q-Future/Q-Bench-Video/blob/main/GPT_test.py) of testing GPT API format on **Q-Bench-Video**
@@ -131,6 +133,54 @@ Use the following command or make necessary modifications to quickly test GPT an
 
 ```
 python GPT_test.py --json_file path/to/Q_Bench_Video_dev.json --video_dir path/to/video/directory --output_file path/to/Q_Bench_Video_dev_response.json --api_key your_openai_api_key
+```
+
+2. Evaluating open-ended responses:
+
+We provide a sample function to rate the open-ended responses, `result' is the list of scores while `score' is the standardized score.
+
+```
+from openai import OpenAI
+client = OpenAI(api_key = "your_api_key")
+import timeout_decorator
+
+def judge_open(question, answer, correct_ans):
+    result = []
+    msg = f'''Given the question [{question}], evaluate whether the response [{answer}] completely matches the correct answer [{correct_ans}]. 
+First, check the response and please rate score 0 if the response is not a valid answer.
+Please rate score 2 if the response completely or almost completely matches the correct answer on completeness, accuracy, and relevance. 
+Please rate score 1 if the response partly matches the correct answer on completeness, accuracy, and relevance.
+Please rate score 0 if the response doesn't match the correct answer on completeness, accuracy, and relevance at all.
+Please only provide the result in the following format: Score:'''
+    print(msg)
+    @timeout_decorator.timeout(5)
+    def get_completion(msg):
+        completion = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant that grades answers related to visual video quality. There are a lot of special terms or keywords related to video processing and photography. You will pay attention to the context of `quality evaluation' when grading."},
+                {"role": "user", "content": msg}
+            ]
+        )
+        return completion.choices[0].message.content
+    
+    for i in range(5):
+        try:
+            response = get_completion(msg)
+            print(response)
+            score = response.split(": ")[-1]
+            result.append(score)
+        except timeout_decorator.TimeoutError:
+            result.append("N/A")
+        except Exception as e:
+            result.append("N/A")
+
+    for i in result:
+        if i in ['0','1','2']:
+            cnt = cnt + 1
+            score = score + float(i)/2
+        score = score / cnt
+    return result, score
 ```
 
 ## Contact
