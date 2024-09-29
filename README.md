@@ -9,7 +9,7 @@
    </div>
 
   
-  <h1>Q-Bench-Video: Benchmark the Video Quality Understanding of LMMs</h1>
+  <h1>Q-Bench-Video: Benchmarking the Video Quality Understanding of LMMs</h1>
   
 _How LMMs Perform on Video Quality Understanding?_
 
