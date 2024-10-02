@@ -56,7 +56,7 @@ C. Beyond the traditional *Technical*, *Aesthetic*, and *Temporal* distortions, 
 Finally, we collect a total of 2,378 question-answer pairs and test them on 12 open-source \& 5 proprietary LMMs. Our findings indicate that **while LMMs have a foundational understanding of video quality, their performance remains incomplete and imprecise, with a notable discrepancy compared to human-level performance**.
 
 ## Release
-- [To Do] 🔥 Release the technical report for **Q-Bench-Video**. Coming soon.
+- [2024/10/2] 🔥 Release the [technical report](https://www.arxiv.org/abs/2409.20063) for **Q-Bench-Video**. 
 - [2024/9/24] 🔥 Release the sample script for testing on **Q-Bench-Video**.
 - [2024/9/20] 🔥 [Github repo](https://github.com/Q-Future/Q-Bench-Video) for **Q-Bench-Video** is online. Do you want to find out how your LMM performs on video quality understanding? Come and test on **Q-Bench-Video** !! [Dataset Download](https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video)
 
