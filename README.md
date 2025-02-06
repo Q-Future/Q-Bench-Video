@@ -36,7 +36,7 @@ _How LMMs Perform on Video Quality Understanding?_
 <div>
 <sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author. 
    </div>
-  <a href="https://github.com/Q-Future/Q-Bench-Video/blob/main/A_Bench__Are_LMMs_Masters_at_Evaluating_AI_generated_Images_.pdf"><strong>Paper</strong></a> |
+  <a href="https://arxiv.org/abs/2409.20063"><strong>Paper</strong></a> |
 <a href="https://github.com/Q-Future/Q-Bench-Video"><strong>Github</strong></a> |
  <a href="https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video"><strong>Data</strong></a> 
   <div style="width: 100%; text-align: center; margin:auto;">
