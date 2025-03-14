@@ -56,6 +56,8 @@ C. Beyond the traditional *Technical*, *Aesthetic*, and *Temporal* distortions, 
 Finally, we collect a total of 2,378 question-answer pairs and test them on 12 open-source \& 5 proprietary LMMs. Our findings indicate that **while LMMs have a foundational understanding of video quality, their performance remains incomplete and imprecise, with a notable discrepancy compared to human-level performance**.
 
 ## Release
+- [2025/3] 🔥 The single video tasks of **Q-Bench-Video** are merged to [VLMEvalKit](https://github.com/open-compass/VLMEvalKit/blob/main/docs/zh-CN/Quickstart.md). Test your video LMM via one line command (`python run.py --data QBench_Video --model GPT4o`)!
+- [2025/2] 🔥 **Q-Bench-Video** is accepted by CVPR 2025! See you in Nashville.
 - [2024/10/2] 🔥 Release the [technical report](https://www.arxiv.org/abs/2409.20063) for **Q-Bench-Video**. 
 - [2024/9/24] 🔥 Release the sample script for testing on **Q-Bench-Video**.
 - [2024/9/20] 🔥 [Github repo](https://github.com/Q-Future/Q-Bench-Video) for **Q-Bench-Video** is online. Do you want to find out how your LMM performs on video quality understanding? Come and test on **Q-Bench-Video** !! [Dataset Download](https://huggingface.co/datasets/zhangzicheng/Q-Bench-Video)
